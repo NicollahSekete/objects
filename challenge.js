@@ -18,45 +18,45 @@ console.log(UserOne)
 const UserTwo = new Website("Adam", 35, "golfer23")
 console.log(UserTwo)
 
-console.table(UserOne)
-console.table(UserTwo)
+console.table(UserOne);
+console.table(UserTwo);
 
 
 
 
 //challenge 2!!!!
+
 class Car{
-    constructor(regNum){
-        this.regNum = regNum;
-        this.hoursParked = 0;
-        this.AmntCharged = 0.00;
+    constructor(regnum){
+        this._regnum = regnum;
+        this._hours = 0;
+        this._charge = 0.00;
     }
-    get regNum(){
-        return this.regNum;
+    get regnum(){
+        return this._regnum;
     }
-    get hoursParked(){
-        return this.hoursParked;
+    get hours(){
+        return this._hours;
     }
-    get AmntCharged(){
-        return this.AmntCharged
+    get charge(){
+        return this._charge;
     }
     increaseHours(){
-        this.hoursParked++;
-        this.AmntCharged +=1.50
+        this._hours++;
+        this._charge += 1.50;
     }
 
 }
 
-
-const pay = (reg, hr) =>{
+const pay = (reg, hr) => {
     const car = new Car(reg);
-    for (i = 0; 1<hr; i++){
+    for(i =0; i<hr; i++){
         car.increaseHours();
     }
-    return `You need to pay ${car.AmntCharged} for ${car.hoursParked} hours.`
+    return `you need to pay £ ${car.charge} for ${car.hours} hours.`;
 }
 
-console.log(pay("56NIKK22", 5));
-
-
-
+const nikk = new Car(pay(1234 , 5));
+console.log(nikk);
+const ray = new Car(pay(1234 , 9));
+console.log(ray);
