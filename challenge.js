@@ -25,6 +25,7 @@ console.table(UserTwo);
 
 
 //challenge 2!!!!
+///How the example works
 
 class Car{
     constructor(regnum){
@@ -60,3 +61,25 @@ const nikk = new Car(pay(1234 , 5));
 console.log(nikk);
 const ray = new Car(pay(1234 , 9));
 console.log(ray);
+
+///// my attempt
+
+
+
+class Cars{
+    constructor(regPlate, hoursParked){
+        this.regPlate = regPlate;
+        this.hoursParked = hoursParked;
+        this.whatYouOwe = this.hoursParked * 1.50;
+    }
+};
+
+const amy = new Cars(1234, 5);
+console.log(amy);
+
+const amber = new Cars(23345, 9);
+console.log(amber);
+
+
+
+
