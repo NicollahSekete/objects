@@ -70,7 +70,7 @@ class Cars{
     constructor(regPlate, hoursParked){
         this.regPlate = regPlate;
         this.hoursParked = hoursParked;
-        this.whatYouOwe = this.hoursParked * 1.50;
+        this.whatYouOwe = "£" + this.hoursParked * 1.50;
     }
 };
 
